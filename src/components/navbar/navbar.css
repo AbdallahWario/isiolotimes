@@ -1,8 +1,9 @@
 .navbar{
-    width: 1024px;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
+    width: 100vw;
+    background: rgb(81, 29, 29);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -18,11 +19,13 @@
     border: 1px solid white;
 }
 
-.container {
-      padding: 10px 0px;
+.nav_container {
+      padding: 10px 10px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      width: 1024px;
+      color: white;
 
     } 
 

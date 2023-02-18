@@ -9,7 +9,6 @@ import { useContext } from "react";
 import { AuthContext } from "../../context/authContext";
 import DOMPurify from "dompurify";
 import './single.css'
-
 const Single = () => {
   const [post, setPost] = useState({});
 
@@ -17,6 +16,7 @@ const Single = () => {
   const navigate = useNavigate();
 
   const postId = location.pathname.split("/")[2];
+  
 
   const { currentUser } = useContext(AuthContext);
 
@@ -59,6 +59,7 @@ const Single = () => {
             <span>{post.username}</span>
             <p>Posted {moment(post.date).fromNow()}</p>
           </div>
+          
           {currentUser.username === post.username && (
             <div className="edit">
               <Link to={`/write?edit=2`} state={post}>
